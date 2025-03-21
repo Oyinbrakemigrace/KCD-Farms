@@ -10,9 +10,9 @@ const Navbar = () => {
 
   return (
     <header className='w-full fixed h-20 z-50 bg-center bg-white/60'>
-      <div className='px-5 mx-auto flex items-center justify-between h-full'>
+      <div className='lg:px-8 px-5 mx-auto flex items-center justify-between h-full'>
         <Link to={"/"}>
-          <img src="./logo.png" alt="logo-img" width={120} />
+          <img src="./logoImg.svg" alt="logo-img" width={120} />
         </Link>
         <nav className='hidden lg:flex'>
           {navItems.map((item, index) => {
@@ -21,13 +21,13 @@ const Navbar = () => {
               // If the item has children, use a button instead of NavLink
               <div key={index} className="relative group px-5">
                 <button className={`flex items-center space-x-2 justify-center 
-                  ${isParentActive ? "text-[#4c682e] font-bold" : "text-zinc-900 hover:text-[#4c682e]"}`}>
+                  ${isParentActive ? "text-farm-green font-bold" : "text-zinc-900 hover:text-farm-green"}`}>
                   <span>{item.label}</span>
                   <span className="transition-all group-hover:rotate-180">
                     <BiChevronUp size={17} />
                   </span>
                 </button>
-                <div className="absolute left-0 top-6 hidden flex-col gap-1 rounded-lg bg-[#4c682e] py-2 
+                <div className="absolute left-0 top-6 hidden flex-col gap-1 rounded-lg bg-farm-green py-2 
                 shadow-md transition-all group-hover:flex">
                   {item.children.map((child, index) => (
                     <NavLink
@@ -48,7 +48,7 @@ const Navbar = () => {
                 key={index}
                 to={item.href}
                 className={({ isActive }) =>
-                  `px-5 ${isActive ? "text-[#4c682e] font-bold" : "text-zinc-900"}`
+                  `px-5 hover:text-farm-green ${isActive ? "text-farm-green font-bold" : "text-zinc-900"}`
                 }
               >
                 {item.label}
