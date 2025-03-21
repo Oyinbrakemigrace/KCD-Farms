@@ -1,13 +1,25 @@
 import React from 'react'
+import HeroSection from '../components/Home Components/HeroSection'
+import WhyChooseUs from '../components/Home Components/WhyChooseUs'
+import Experience from '../components/Home Components/Experience'
+import Explore from '../components/Home Components/Explore'
+import Community from '../components/Home Components/Community'
 
 const HomePage = () => {
   return (
-    <div className='bg-[url(./assets/heroImage.jpg)] pt-[7rem] bg-cover bg-center bg-no-repeat h-screen relative'>
-      <div className="absolute top-0 h-full w-full bg-[#000]/80" />
-      <div className="absolute inset-0 flex flex-col justify-center items-center backdrop-blur-xs">
-        <p className='text-white font-extrabold lg:text-7xl text-3xl'>Hello world</p>
-        <p className='text-white font-extrabold text-2xl mt-5'>Hello world</p>
-
+    <div className=''>
+      <HeroSection />
+      <div className='my-14 px-6'>
+        <Experience />
+      </div>
+      <div className='my-14 px-6 py-12 bg-farm-green/20'>
+        <WhyChooseUs />
+      </div>
+      <div className='my-14 px-6'>
+        <Explore />
+      </div>
+      <div className='mt-14 px-6 py-12 bg-farm-green/20'>
+        <Community />
       </div>
     </div>
   )
