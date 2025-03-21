@@ -1,7 +1,6 @@
 import React from 'react'
 import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6'
-import navItems from '../constants/navitems'
 import { Link, NavLink } from 'react-router-dom'
 import { HiOutlineMail } from 'react-icons/hi'
 import { IoCallOutline } from 'react-icons/io5'

@@ -1,7 +1,7 @@
 import React from 'react'
 import SingleMobileNavitem from './SingleMobileNavitem'
 import { BiX } from 'react-icons/bi'
-import navItems from '../constants/navitems'
+import navItems from '../constants/navItems'
 
 const MobileNavbar = ({ setOpenSideMenu }) => {
     return (
