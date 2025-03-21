@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
-import navItems from '../constants/navitems';
+import navItems from '../constants/navItems';
 import { BiChevronUp, BiMenu } from 'react-icons/bi';
 import MobileNavbar from './MobileNavbar';
 
